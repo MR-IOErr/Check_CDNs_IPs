@@ -8,7 +8,6 @@
 -A INPUT -p tcp -m tcp --dport 3031 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -s 127.0.0.1/32 -p tcp -m tcp --dport 9100 -m state --state NEW,RELATED,ESTABLISHED -m comment --comment Node-Exporter -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -m comment --comment TEST -j ACCEPT
-#-A INPUT -s 93.113.235.139/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -m comment --comment Node-Exporter -j ACCEPT
 #-A INPUT -s 185.166.104.0/24 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 194.34.163.0/24 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 79.175.140.0/28 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
@@ -42,7 +41,6 @@
 #-A INPUT -s 185.229.191.85/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 89.187.162.209/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 89.187.169.73/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
-#-A INPUT -s 2.144.3.144/29 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 194.34.162.150/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 94.182.110.96/29 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 2.144.3.160/28 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
