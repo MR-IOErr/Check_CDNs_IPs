@@ -42,7 +42,6 @@
 #-A INPUT -s 89.187.162.209/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 89.187.169.73/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 194.34.162.150/32 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
-#-A INPUT -s 94.182.110.96/29 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 #-A INPUT -s 2.144.3.160/28 -p tcp -m tcp --dport 443 -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -j DROP
 COMMIT
